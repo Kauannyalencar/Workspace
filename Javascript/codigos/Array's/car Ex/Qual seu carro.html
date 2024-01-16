@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+</head>
+<style>
+    body{
+        background: repeating-linear-gradient(90deg, blue 0%, 10%) transparent 10%, 15%;
+    }
+</style>
+<body>
+    <script>
+        const car = []
+        car.marca = prompt("Qual a marca do carro? ");
+        car.ano = prompt("Qual o ano dele?")
+        car.dono = prompt("Qual o nome do dono? ")
+
+        document.write(`Marca: ${car.marca}<br> Ano: ${car.ano} <br> Dono: ${car.dono}`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgray;
+        }
+
+        thead,
+        tfoot {
+            background-color: rgb(56, 53, 53);
+            color: #fff;
+        }
+
+        td.num {
+            text-align: right;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tabelas grandes</h1>
+    <table>
+        <caption>População das unidades federativas</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">20.538.718</td>
+            </tr>
+            <tr>
+                <td>Rio de janeiro</td>
+                <td class="num">17.264.791</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.873.064</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.433.957</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.377.239</td>
+            </tr>
+            <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.557.071</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.132.078</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">7.581.051</td>
+            </tr>
+            <tr>
+                <td>Santa Catarina</td>
+                <td class="num">6.248.436</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">6 003 788</td>
+            </tr>
+            <tr>
+                <td>Rio grande do norte</td>
+                <td class="num">3.506.853 </td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.484.466</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.337.357</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.245.227</td>
+            </tr>
+            <tr>
+                <td>Destrito Federal</td>
+                <td class="num"></td>
+            </tr>
+
+        </tbody>
+        <tfoot>
+            <th>Total de hábitantes</th>
+            <td><strong></strong></td>
+        </tfoot>
+    </table>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque quam sit consequuntur unde, vel aliquam, nesciunt fugiat porro accusantium illo libero consequatur possimus soluta. Ratione eos eius ducimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab suscipit, consectetur quidem perspiciatis consequatur ut, eius consequuntur qui atque quaerat enim repudiandae? Non aspernatur asperiores cumque dolore molestias doloremque adipisci?  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque saepe veniam quasi eaque esse facilis tempora unde voluptas reprehenderit quas non ipsum culpa repudiandae vitae officiis nihil repellendus, magnam ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos ab vero eligendi, sapiente fugit illum nesciunt, reiciendis nostrum quas quod officia veniam rerum accusamus dignissimos deleniti totam consequatur molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam debitis dolorem in quibusdam, molestiae nobis reprehenderit nam. Molestias veritatis culpa sapiente sequi necessitatibus beatae, ratione omnis iste error non. Earum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque quam sit consequuntur unde, vel aliquam, nesciunt fugiat porro accusantium illo libero consequatur possimus soluta. Ratione eos eius ducimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab suscipit, consectetur quidem perspiciatis consequatur ut, eius consequuntur qui atque quaerat enim repudiandae? Non aspernatur asperiores cumque dolore molestias doloremque adipisci?  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque saepe veniam quasi eaque esse facilis tempora unde voluptas reprehenderit quas non ipsum culpa repudiandae vitae officiis nihil repellendus, magnam ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos ab vero eligendi, sapiente fugit illum nesciunt, reiciendis nostrum quas quod officia veniam rerum accusamus dignissimos deleniti totam consequatur molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam debitis dolorem in quibusdam, molestiae nobis reprehenderit nam. Molestias veritatis culpa sapiente sequi necessitatibus beatae, ratione omnis iste error non. Earum.
+    </p>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error eaque quam sit consequuntur unde, vel aliquam, nesciunt fugiat porro accusantium illo libero consequatur possimus soluta. Ratione eos eius ducimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab suscipit, consectetur quidem perspiciatis consequatur ut, eius consequuntur qui atque quaerat enim repudiandae? Non aspernatur asperiores cumque dolore molestias doloremque adipisci?  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque saepe veniam quasi eaque esse facilis tempora unde voluptas reprehenderit quas non ipsum culpa repudiandae vitae officiis nihil repellendus, magnam ipsam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae eos ab vero eligendi, sapiente fugit illum nesciunt, reiciendis nostrum quas quod officia veniam rerum accusamus dignissimos deleniti totam consequatur molestias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam debitis dolorem in quibusdam, molestiae nobis reprehenderit nam. Molestias veritatis culpa sapiente sequi necessitatibus beatae, ratione omnis iste error non. Earum.
+    </p>
+</body>
+
+</html>

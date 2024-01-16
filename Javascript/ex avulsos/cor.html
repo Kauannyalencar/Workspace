@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Object-oriented JavaScript example</title>
+  </head>
+
+  <body>
+    
+    <script>
+        var pessoa = {
+            name: ["Ethan", "Gold"],
+            idade: 17,
+            sexo:"Masculino",
+            interesses:["Pokémon", "Andar de bike"],
+            bio: function () {
+                alert(
+                    this.nome[0] +
+                    " " +
+                    this.nome[1] +
+                    " tem " +
+                    this.idade +
+                    " anos de idade. Ele gosta de  " +
+                    this.interesses[0] +
+                    " e " +
+                    this.interesses[1] +
+                    ".",
+                )
+            },
+        saudacao: function () {
+            alert("Oi! Eu sou " + this.nome[0] + ".")
+        }
+    }
+    //ps: ainda não sei fazer isso sozinha
+    </script>
+  </body>
+
+</html>

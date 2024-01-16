@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <style>
+        body {
+            font: normal 20pt Arial;
+            color: brown;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="minhaFuncao()">Try</button>
+    <p id="teste">Tenho um avião!</p>
+   
+    
+    <script>
+        var nome = window.prompt('Qual é o seu nome ? ')
+        document.write(`Olá, <strong> ${nome}</strong>. Seu nome tem ${nome.length} letras <br>`)
+        document.write(`Seu nome em maiùsculas é ${nome.toUpperCase()} <br/>`)
+        document.write(`Seu nome em minúsculas é ${nome.toLowerCase()} <br/>`)
+        document.write(`${nome.slice(3)}`)
+
+        function minhaFuncao() {
+            let text = document.getElementById("teste").innerHTML;
+
+            document.getElementById("teste").innerHTML = text.replace("avião", "carro")
+            
+        }
+    </script>
+</body>
+</html>

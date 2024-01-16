@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form test</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .campo1{
+           display: flex;
+           flex-direction: column; 
+           padding: 15px;
+        }
+
+        .campo2 {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+        input{
+            border: 1px solid #000;
+            margin: 8px;
+            border-radius: 3px;
+        }
+
+        input:valid{
+            border:1px solid green;
+        }
+
+        input:invalid{
+            border:1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" name="formulario">
+        <fieldset class="campo1">
+            <legend>Detalhes pesosais</legend>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="Idade">Idade:</label>
+            <input type="number" name="nome">
+        </fieldset>
+        <fieldset class="campo2">
+            <legend>Comentarios informativos</legend>
+            <label for="comentario">Comentário</label>
+            <input type="text" name="nome" id="comentario" placeholder="Frase de efeito">
+            <label for="email">Email</label>
+            <input type="email" name="nome" id="email">
+        </fieldset>
+    </form>
+</body>
+</html>

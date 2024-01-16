@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+</head>
+
+<body>
+    <h1>Estrutura de data</h1>
+
+    <script>
+        var data = new Date()
+        document.write("<b>Local String:</b>" + data.toLocaleString('pt-BR') + "<br>")
+
+        var dia = data.getDay()
+
+        switch (dia) {
+            case 0:
+                dia = 'Domingo'
+                break
+            case 1:
+                dia =  'Segunda'
+                break
+            case 2:
+                dia = 'Terça'
+                break
+            case 3:
+              dia = 'Quarta'
+                break
+            case 4:
+                dia =  'Quinta'
+                break
+            case 5:
+               dia = 'Sexta'
+                break
+            case 6:
+                dia = 'Sábado'
+                break
+            default:
+                console.log('[ERRO] Dia invalido!');
+        }
+
+        document.write("<b>" + dia + "</b> <br>")
+        document.write("<b>Hora: </b>" + data.getHours() + "<br>")
+        document.write("<b>Minutos:</b> " + data.getMinutes() + "<br>")
+        document.write("<b>Mês:</b> " + data.getMonth() + "<br>")
+        document.write("<b>Ano:</b> " + data.getFullYear() + "<br>")
+
+    </script>
+</body>
+
+</html>

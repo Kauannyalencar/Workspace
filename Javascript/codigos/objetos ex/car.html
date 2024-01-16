@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carros</title>
+</head>
+
+<body>
+    <h1>Pesquisa sobre Carros</h1>
+
+    <script>
+        function Car(make, model, year) {
+            this.make = make;
+            this.model = model;
+            this.year = year;
+        }
+
+        const myCar = new Car("Hyundai", 'Hb20', 2013)
+        const yourCar = new Car("Ferrari", 'F430', 2006);
+
+        console.log(myCar.year);
+        console.log(yourCar);
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste</title>
+</head>
+
+<body>
+    <div class="conteudo">
+        <p class="contador"></p>
+    </div>
+
+    <script>
+        let user = prompt("Até quanto quer contar? ")
+        let contador = document.querySelector(".contador");
+
+        let cont = []
+        
+        for (let i = 1; i <= user; i++) {
+            cont.push(prompt(`Qual o ${i} número ?`));
+        
+        }
+        contador.textContent = cont
+        console.log(cont);
+
+
+    </script>
+</body>
+
+</html>
