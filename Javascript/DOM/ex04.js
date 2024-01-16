@@ -6,7 +6,7 @@ p.setAttribute('style', 'color:red;')
 
 const h3 = document.createElement('h3')
 h3.textContent = "I'm a blue h3"
-h3.style.color = 'blue'
+h3.style.color = 'grey'
 const div = document.createElement('div');
 const h1 = document.createElement('h1')
 const paragrafoDiv = document.createElement('p')
