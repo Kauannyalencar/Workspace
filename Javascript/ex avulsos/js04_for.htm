@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>js04_for.htm - incondicional for</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+</head>
+<style> 
+    p{
+
+        font-family: Arial, Helvetica, sans-serif;
+        
+    }
+
+</style>
+<body>
+    <script language="Javascript">
+        <!--
+        /* Objetivo: Aplicação de laço incondicional <for>, incrementando +2 na variavel js_num e apresentando os valores acumulados de 1 a 10.
+        */
+
+        /* Definição de variaveis */
+        var js_num;
+        let nuser = prompt("Até quanto quer contar ?")
+        
+
+        document.write('<b><p>Apresentação dos valores acumulados para js_num=1 e menor ou igual a 10 incrementando a variavel de +=2</b>');
+        document.write('<p>(note que o limite era até 9, pois 9+2 = 11, portanto será maior que 10)');
+            document.write('<p>Att: Agora o usuário pode escolher até quanto quer contar</p>')
+            
+        /* Aplicação do laço incondicinal  - for */
+        for (js_num = 1; js_num <= nuser; js_num ++) {
+            document.write('<p>' + js_num)
+        }
+        //-->
+    </script>
+</body>
+
+</html>

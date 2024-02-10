@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background-color: cadetblue;
+            font: normal 16px Arial;
+            text-align: center;
+            margin:10px;
+        }
+
+        main {
+            display: block;
+        }
+        input {
+            border: none;
+            border-radius: 15px;
+            padding: 5px;
+            margin: 2px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 20px;
+            font-family: 'Arial';
+        }
+
+        div#res {
+            padding: 15px;
+            font:normal 15px Arial;
+
+        }
+
+        .btn {
+            border-radius: 6px;
+            border: none;
+            margin: 5px;
+        }
+    </style>
+    <title>Partida de Futebol</title>
+</head>
+
+<body>
+        <h1>Marrocos X Barraqrs</h1>
+        <main>
+        <div id="marrocos">
+            <p>Quantos gols fez Marrocos?</p>
+            <input type="number" id="golm">
+        </div>
+        <div id="barraqrs">
+            <p>Quantos gols fez Barraqrs?</p>
+            <input type="number" id="golb">
+        </div>
+        <input type="button" class="btn" value="Ver resultado" onclick="resultado()">
+        <div id="res">
+
+        </div>
+    </main>
+    <script>
+        function resultado() {
+            var gol1 = window.document.getElementById('golm')
+            var gol2 = window.document.getElementById('golb')
+            var res = window.document.querySelector('div#res')
+            var dr = (gol1.value - gol2.value)
+
+            if (dr >= 1 && dr < 4) {
+                res.innerHTML = `Com ${dr} gols de diferença, essa é considerada uma partida normal`
+            } else if (dr >= 4) {
+                res.innerHTML = 'GOLEADA'
+            } else if (dr <= 0) {
+                res.innerHTML = 'PARTIDA EMPATADA'
+            }
+        }
+//Eu nem acredito
+    </script>
+</body>
+
+</html>

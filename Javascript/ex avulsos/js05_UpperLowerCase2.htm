@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>js05_UpperLowerCase.htm - conversão de string</title>
+<meta http-equiv="Content-Type" content="tex/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+<body>
+<!-- Linha de comentario HTML: Entrada de dados via formulario -->
+    <h3>Formul&aacute;rio de consulta de curso:</h3>
+    <p>
+    <form name="formcurso" action="" method="post">
+       Digite seu curso : <input type="text" name="f_cursodig" size="8" maxlength="4" /> (sist) <p></p>
+       <input type="button" name="btn_validar" value="Validar" onclick="cadcurso()" />         
+       <input type="reset" name="btn_cancelar" value="Cancelar" /><p></p>
+       C&oacute;digo do curso: <input type="text" name="f_codcurso" size="15" maxlength="10" />
+   </form>
+<!-- Linha de comentario HTML: Estrutura Javascript com o metodo toLowercase() -->
+<script language="Javascript">
+<!--
+/* Objetivo: Capturar o nome do curso e apresentar o codigo correspondente
+    Verificar;
+    Se js_cursodig for igual a sist, apresentar o codigo "sist001/FB".
+        Caso contrario, apresentar a mensagem "curso Invalido!".
+    Objetos e Metodos:
+        Entrada: document.form
+        Saida: document.form (para codigo valido no capo de saida do formulario)
+        Saida: window.alert (para codigo invalido por janela de alerta)
+    Formulario: formcurso
+    Função: cadcurso
+    Evento: onclick
+*/
+
+/* Definição das variaveis */ 
+var js_cursodig;
+
+/* Função cadcurso() */
+function cadcurso() {
+    js_cursodig=document.formcurso.f_cursodig.value;
+    if (js_cursodig.toLowercase()=='sist') {
+        document.formcurso.f_codcurso.value='sist001/FB';
+    } // fechamento da estrutura if
+    else {
+        window.alert('curso Inv\u00E1lido!');
+    } // fechamento da estrutura else
+} // fechamento da estrutura da function
+//-->   
+</script>
+</body>
+</html>

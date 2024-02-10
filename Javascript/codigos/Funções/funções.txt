@@ -1,0 +1,16 @@
+        Função
+ Funções são ações executadas assim que são chamads ou em decorrência de algum evento.
+
+- Algumas funções precisam de uma chamada, um conjunto de parâmetro, uma ação e um retorno.
+ - Toda função precisa de uma chamada e de uma ação.
+EX:
+ function "ação"(parametro) {
+    return "res"
+ } 
+ ação(5) = chamada
+
+ Uma função só pode ter um retorno.
+
+ Função que chama função
+ - Recursividade
+ 

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <div id="container">
+        <div class="display">Child 1</div>
+        <div class="Botoes"></div>
+        <div class="controls">Child 3</div>
+    </div>
+
+    <script>
+        const container = document.querySelector("#container")
+        console.dir(container.firstElementChild);
+        //Seleciona o primeiro elemento do #container => .display
+        // Dir() mostra todas as própriedades do objeto = div.display, ao invés de só o conteúdo da div como o log.
+        const controls = document.querySelector('.controls');
+        
+        console.dir(controls.previousElementSibling);
+        //Seleciona o elemento anterior = .display
+        console.dir(container.lastElementChild)
+        //O último child do container
+
+    </script>
+
+  
+</body>
+</html>

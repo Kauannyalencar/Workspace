@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <title>Hereditariedade</title>
+    <style>
+
+        nav {
+            padding: 10px;
+            background-color: gold;
+            border-radius: 15px;
+            text-shadow: 2px 1px rgba(0, 0, 0, 0.245);
+        }
+
+        nav a {
+            padding: 10px;
+            text-decoration: none;
+            color: firebrick;
+            
+        }
+
+        #Titulo1 {
+            background-color: black;
+            font-size: 80px;
+            margin: 0;
+            box-shadow: 3px 2px rgba(0, 0, 0, 0.209);
+            border-radius: 4px;
+        }
+
+        h1 {
+            background-image: linear-gradient(to right, violet, transparent);
+            font: normal 30px Arial;
+            background-color: aqua;
+        }
+
+        p {
+            background-color: hotpink;
+        }
+         /*
+         O <p> se sobrepõe a bg-color da div e da class='area1', pois ele está dentro de ambos */
+        div  {
+            background-color: forestgreen;
+        }
+
+        .area1 {
+            background-color: teal;
+        }
+
+    </style>
+</head>
+
+<body>
+    <nav>
+        <a href="#Titulo1">Link do Titulo 1</a>
+        <a href="#Titulo2">Link do Titulo 2</a>
+    </nav>
+
+    <div class="area1">
+        <h1 id="Titulo1">Titulo 1</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui eius numquam harum delectus soluta optio saepe neque voluptatibus ducimus? Sequi, adipisci aspernatur odit esse nesciunt quis maiores harum asperiores facere?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias corrupti, accusantium labore officia fugiat ipsa harum ratione, nihil sunt expedita esse dignissimos impedit blanditiis animi placeat iste vel suscipit eos!
+        </p>
+    </div>
+
+
+    <div class="parent">
+        <div class="child">
+            <h2 id="Titulo2">Titulo 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium ut officiis laudantium optio expedita. Placeat, commodi aspernatur. Perferendis reprehenderit esse doloremque molestias fugit aut ex dolorum, cupiditate rem mollitia!
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa, molestias qui in dolor aperiam obcaecati ea, illum, ab aspernatur dolorum corporis! Iusto nulla doloremque repellendus quod quae rem veniam Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius beatae mollitia sapiente temporibus recusandae earum voluptatem aspernatur molestias! Architecto adipisci porro non odit deleniti eveniet amet voluptatum quas accusantium vel!
+                </p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nacionalidade</title>
+    <style>
+        body{
+            background-color:rgb(16, 6, 15);
+            color:greenyellow;
+            margin: 25px;
+            text-align: center;
+        }
+        header {
+            text-align: left;
+            width: 30px;
+            font-family: 'Verdana';
+        }
+        header:hover {
+            cursor: pointer;
+        }
+
+        div#res {
+            padding: 25px;
+        }
+        input#nacionalidade {
+           border: none;
+           border-radius: 15px;
+           padding: 5px;
+        }
+        
+        .btn {
+            border-radius: 6px;
+            border: none;
+            margin: 5px;
+        }
+        .btn:hover {
+           cursor: pointer; 
+        }
+    </style>
+</head>
+<body>
+    <header>IBP</header>
+    <h1>Instituição Brasileira de Pessoas</h1>
+   País de origem: <input type="text" id="nacionalidade" placeholder="Digite seu país aqui" >
+   <input type="button" value="Enviar" class="btn" onclick="pegar()">
+   <div id="res">
+
+   </div>
+
+   <script>
+    function pegar() {
+        var país = window.document.getElementById('nacionalidade')
+        var res = window.document.querySelector('div#res')
+        var paísAtual = (país.value)
+
+        if (país.value == 'Brasil') {
+            res.innerText = `Vivendo no ${paísAtual}, voçê é brasileiro!`
+        } else{
+            res.innerHTML = `Vivendo em ${paísAtual}, voçê é estrangeiro!`
+        }
+        
+    }
+   </script>
+</body>
+</html>

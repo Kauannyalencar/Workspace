@@ -1,0 +1,73 @@
+<!DOCTYpe html>
+<html>
+
+<head>
+<title>js04_switchCase - Selecao Multipla</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta charset="utf-8"/>
+</head>
+
+<body> 
+
+<!-- <-- Linha de comentario HTML: Definião do elemento formulario para entrada de dados em HTML --> 
+<form name="formcalend" action="" method="post">
+Digite o m&ecirc;s (01 a 12): <input type="text" name="f_mes" size="4" maxlength="2" /><p></p>
+
+<input type="button" name="btn_processar" value="Processar" onClick="verificames()"/>
+
+<input type="reset" name="btn_cancelar" value="Cancelar"/><p></p>
+
+o M&ecirc;s correspondente &eacute;: <input type="text" name="f_nomemes" size="18" maxlength="15" />
+</form>
+
+<!--  Linha de comentario HTML: Inicio da estruturação do Java Script -->
+<script language="Javascript" >
+<!--
+/*  Linha de comentario Javascript
+    Objetivo: Utilizar o recurso de  seleção multipla - switch...case, pesquisar o nomw do mês de referenciaca atraves do respetivo numero do m~es informado.
+    -  Objetivos/Metodos utilizados:
+    Entrada: document.form (entrada se dados via formulario)
+    Saida: document.form (saida via formulario)
+    -    Importante:
+            Os campos do formulario serão identificados com o prefixo f_ => EX: f_mes
+            Os campos do Javascript serão identificados com o prefixo js_ => EX: js_mes
+*/ 
+
+/* Definição de variaveis */ 
+var js_mes;
+
+/*Inicio da função verificames() para capturar os dados do formulario e pesquisa por Seleção multipla */ 
+function verificames() {
+    /*Captura do valor do mes do formulario f]-mes e transferência/atribuição para variaveis do Javascript js_mes */ 
+    js_mes = parseInt(document.formcalend.f_mes.value);
+    
+    /* Inicio da estrutura de Seleção switc...case */
+    switch (js_mes) {
+            case 1 : document.formcalend.f_nomemes.value = 'Janeiro'; break; 
+            case 2 : document.formcalend.f_nomemes.value = 'Fevereiro'; break;
+            case 3 : document.formcalend.f_nomemes.value = 'Marco'; break;
+            case 4 : document.formcalend.f_nomemes.value = 'Abril'; break;
+            case 5 : document.formcalend.f_nomemes.value = 'Maio'; break;
+            case 6 : document.formcalend.f_nomemes.value = 'Junho'; break;
+            case 7 : document.formcalnd.f_nomemes.value = 'Julho'; break;
+            case 8 : document.formcalend.f_nomemes.value = 'Agosto'; break;
+            case 9 : document.formcalend.f_nomemes.value = 'Setembro'; break;
+            case 10 : document.formcalend.f_nomemes.value = 'Outubro'; break; 
+            case 11 : document.formcalend.f_nomemes.value = 'Novembro'; break;
+            case 12 : document.formcalend.f_nomemes.value = 'Dezembro'; break;
+    default : document.formcalend.f_nomemes.value = '** M\u00eas Inv\u00e1lido! **'; break;
+    }
+    /* Final da estrutura de Seleção multipla switch...case */  
+}
+/* Final da função verificames() para capturar dos dados do formulario e pesquisa por seleção multipla */ 
+/*      TABELA UNICODE 
+        Utilização da tabela Unicode para configuração dos caracteres de acentuação
+            - A mensagem "** Mês Invalido! **" com Unicode ficará "** M\u00eas Inv\u00e1lido! **" 
+            - ê (letra mínuscula "e" com acento circunflexo) = \u00ea
+            - á (letra mínuscula "a" com acento agudo) = \u00e1
+        Veja mais em <http://devmedia.com.br/unicode-casicos/25169> - Acessando em: 25/10/2016 
+*/
+//--> 
+</script>
+</body>
+</html>

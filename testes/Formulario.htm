@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="src/css/estilo.css">
+
+</head>
+
+<body>
+  <header class="cabecalho">
+    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+
+  <form id="survey-form">
+    <label id="name-label">Name<input id="name" type="text" required placeholder="Enter you name"></input></label>
+    <label id="email-label">Email<input id="email" type="email" required placeholder="Enter you Email"></input></label>
+    <label id="number-label">Age<input id="number" type="number" min="15" max="100" required placeholder="Age">
+      <span>
+        </input></label>
+    <div>
+      <select id="dropdown">
+        <option value=""></option>
+        <option value="1"></option>
+        <option value="2"></option>
+        <option value="3"></option>
+      </select>
+    </div>
+    <label>
+      <input type="radio" value="definity" name="radio"></input>
+      <input type="radio" value="maybe" name="radio"></input>
+      <input type="radio" value="not-sure" name="radio"></input>
+    </label>
+    <input type="checkbox" value="1"></input>
+    <input type="checkbox" value="2"></input>
+    <input type="checkbox" value="3"></input>
+    <input type="checkbox" value="4"></input>
+    <input type="checkbox" value="5"></input>
+    <input type="checkbox" value="6"></input>
+    <input type="checkbox" value="7"></input>
+
+    <textarea></textarea>
+    <button type="submit" id="submit">Enviar</button>
+  </form>
+</body>
+
+</html>

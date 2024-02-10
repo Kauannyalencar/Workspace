@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <style>
+        .resultados{
+            padding: 25px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number">
+    <button type="button" class="calcule">Calcule</button>
+    <button type="button" class="cancelar">Cancelar</button>
+    <pre class="resultados"></pre>
+
+    <script>
+        const resultados = document.querySelector(".resultados");
+        const n = document.querySelector("input")
+        function calcule() {
+            resultados.textContent = ""
+            for(let i = 1; i <= 10; i++) {
+                const newResult = `${n.value} x ${i} = ${i * n.value}`;
+                resultados.textContent += `${newResult}\n`; 
+            }
+            resultados.textContent += "\nFinished!";
+            n.value = ""
+            n.focus()
+        }
+        
+        const calculeBtn = document.querySelector(".calcule");
+        const limparBtn = document.querySelector(".cancelar")
+
+        calculeBtn.addEventListener("click", calcule
+        );
+        limparBtn.addEventListener("click", () => (resultados.textContent = ""))
+       
+
+    </script>
+</body>
+</html>

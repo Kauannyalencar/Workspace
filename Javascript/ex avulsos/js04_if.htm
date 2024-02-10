@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> js04_if.htm _if</title>
+<meta http_equiv="Content_Type" contente="text/html; ">
+</head>
+<body>
+<script language="javaScript">
+
+/* Objetivo: Ler dois valores, independentemente da ordem da origem em que forem digitados, e apresenta-los em ordem crescente.
+   Sera nescessário efetuar a troca de valores, deve usar uma terceira variavel.
+*/
+
+/* Definição de variaveis */
+var js_n1;
+var js_n2;
+var js_n3;
+
+/* Entrada de dados */ 
+js_n1= parseInt(window.prompt('Informe o valor do primeiro numero: ', '00'));
+js_n2= parseInt(window.prompt('Informe o valor do degundo numero','00'));
+
+/* Saida de Dados sem classificação */
+document.write('numero 1 digitado = ' + js_n1);
+document.write('<br>numero 2 digitado =' + js_n2);
+
+/* Saida de Dados co, classificação por decisão condicional simples (if) */
+     if(js_n1 > js_n2) {
+        js_n3 = js_n1;
+        js_n1 = js_n2;
+        js_n2 = js_n3;
+     }
+
+document.write('<p><b>Classificação em ordem crescente:<b> ' + js_n1 + ' e ' + js_n2);
+
+</script>
+</body>
+</html>
